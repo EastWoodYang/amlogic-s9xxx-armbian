@@ -23,7 +23,7 @@ inputs:
   version_branch:
     description: "Set kernel branch."
     required: false
-    default: "stable"
+    default: "hassbox"
   auto_kernel:
     description: "Auto use the latest kernel."
     required: false
@@ -31,7 +31,7 @@ inputs:
   kernel_repo:
     description: "Set kernel repository."
     required: false
-    default: "https://github.com/ophub/kernel/tree/main/pub"
+    default: "https://github.com/EastWoodYang/kernel/tree/main/pub"
   armbian_size:
     description: "Set armbian rootfs size(Unit: MiB)."
     required: false
@@ -72,7 +72,7 @@ inputs:
   kernel_sign:
     description: "Set the kernel custom signature"
     required: false
-    default: "-ophub"
+    default: "-HassBox"
   kernel_config:
     description: "Set the path of kernel .config"
     required: false

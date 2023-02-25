@@ -87,7 +87,7 @@ jobs:
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Delete releases and workflows runs
-        uses: ophub/delete-releases-workflows@main
+        uses: EastWoodYang/delete-releases-workflows@main
         with:
           delete_tags: ${{ inputs.delete_tags }}
           out_log: ${{ inputs.out_log }}

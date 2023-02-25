@@ -75,9 +75,9 @@ firmware_repo="${firmware_repo//tree\/main/trunk}"
 # Kernel files download repository
 kernel_repo="https://github.com/ophub/kernel/tree/main/pub"
 # Set stable kernel directory: [ stable ], rk3588 kernel directory: [ rk3588 ]
-kernel_dir=("stable" "rk3588")
+kernel_dir=("hassbox")
 # Set the list of kernels used by default
-stable_kernel=("6.1.10" "5.15.50")
+stable_kernel=("5.10.100")
 rk3588_kernel=("5.10.150")
 # Set to automatically use the latest kernel
 auto_kernel="true"

@@ -16,7 +16,7 @@ on:
       armbian_board:
         description: "Select Amlogic Board."
         required: false
-        default: "all"
+        default: "s905x3"
         type: choice
         options:
           - all
@@ -54,7 +54,7 @@ on:
       armbian_kernel:
         description: "Select kernel version."
         required: false
-        default: "5.15.85_6.1.1"
+        default: "5.10.100"
         type: choice
         options:
           - 5.4.225_5.10.160_5.15.85
@@ -73,7 +73,7 @@ on:
       kernel_repo:
         description: "Set the kernel repository."
         required: false
-        default: "https://github.com/ophub/kernel/tree/main/pub"
+        default: "https://github.com/EastWoodYang/kernel/tree/main/pub"
       armbian_size:
         description: "Set armbian rootfs size(Unit: MiB)."
         required: false
@@ -150,7 +150,7 @@ jobs:
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Rebuild Armbian
-        uses: ophub/amlogic-s9xxx-armbian@main
+        uses: EastWoodYang/amlogic-s9xxx-armbian@main
         if: ${{ env.ARMBIAN_URL }} != '' && !cancelled()
         with:
           build_target: armbian

@@ -56,11 +56,11 @@ host_release="$(cat /etc/os-release | grep '^VERSION_CODENAME=.*' | cut -d'=' -f
 # When set to [ -r kernel.org ], Kernel download from kernel.org
 kernel_org_repo="https://cdn.kernel.org/pub/linux/kernel/v5.x/"
 # Set the default for downloading kernel sources from github.com
-repo_owner="unifreq"
+repo_owner="EastWoodYang"
 repo_branch="main"
-build_kernel=("5.10.125" "5.15.50")
+build_kernel=("5.10.125")
 auto_kernel="true"
-custom_name="-ophub"
+custom_name="-HassBox"
 # Set the kernel compile object, options: [ dtbs / all ]
 package_list="all"
 
