@@ -17,6 +17,7 @@ on:
         options:
           - jammy
           - bullseye
+          - bookworm
       armbian_board:
         description: "Select Box Board."
         required: false
